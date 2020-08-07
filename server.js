@@ -95,9 +95,8 @@ app.post("/subscribe/payments/schedule", async (req, res) => {
   //   }
 
   const customer_uid = "taehong_0001_1234";
-  const merchant_uid = "ether123card";
-  const amount = "10000";
-  const name = "쿠키맛";
+  const merchant_uid = "ether789card";
+  const amount = "100";
 
   try {
     const getToken = await axios.post("https://api.iamport.kr/users/getToken", {
@@ -125,7 +124,7 @@ app.post("/subscribe/payments/schedule", async (req, res) => {
 
     if (code === 0) {
       // 카드사 통신에 성공(실제 승인 성공 여부는 추가 판단이 필요합니다.)
-      if (paymentResult.status === "paid") {
+      if (paymentResult.status === 200) {
         //카드 정상 승인
         res.send({
           status: "success",

@@ -1,0 +1,26 @@
+{
+  "name": "iamport-react-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlsgml719/iamport-react-node.git"
+  },
+  "author": "jinhee kang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wlsgml719/iamport-react-node/issues"
+  },
+  "homepage": "https://github.com/wlsgml719/iamport-react-node#readme",
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.11.1",
+    "babel-loader": "8.1.0"
+  }
+}
